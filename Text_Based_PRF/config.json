@@ -1,0 +1,136 @@
+{
+  "MODE": "file",
+  "MODEL": "bert",
+  "BERT_MODEL": "nboost/pt-bert-base-uncased-msmarco",
+  "BERT_TOKENIZER": "nboost/pt-bert-base-uncased-msmarco",
+  "T5_MODEL": "castorini/monot5-base-msmarco",
+  "T5_TOKENIZER": "t5-base",
+  "WEBAP": {
+    "COLLECTION": [
+      "data/webap/collection/collection.json"
+    ],
+    "INDEX": "data/webap/index/webap-index",
+    "QUERY": "data/webap/query/full_queries.json",
+    "RESULT": "result/webap/bm25+bert+prf/crumb_file",
+    "RANK_FILE": "result/webap/bm25+bert/bm25_default_bert.txt",
+    "WINDOW_SIZE": 75,
+    "STRIDE": 37
+  },
+  "WIKIPASSAGEQA": {
+    "COLLECTION": [
+      "data/wikipassageqa/collection/collection.json"
+    ],
+    "INDEX": "data/wikipassageqa/index/wikipassageqa-index",
+    "QUERY": "data/wikipassageqa/query/full_queries.json",
+    "RESULT": "result/wikipassageqa/bm25+bert+prf/crumb_file",
+    "RANK_FILE": "result/wikipassageqa/bm25+bert/bm25_default_bert.txt",
+    "WINDOW_SIZE": 134,
+    "STRIDE": 67
+  },
+  "CAST": {
+    "COLLECTION": [
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs00.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs01.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs02.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs03.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs04.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs05.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs06.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs07.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs08.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs09.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs10.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs11.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs12.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs13.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs14.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs15.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs16.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs17.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs18.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs19.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs20.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs21.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs22.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs23.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs24.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs25.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs26.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs27.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs28.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/CAR_docs29.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/MARCO_docs00.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/MARCO_docs01.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/MARCO_docs02.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/MARCO_docs03.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/MARCO_docs04.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/MARCO_docs05.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/MARCO_docs06.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/MARCO_docs07.json",
+      "data/trec_cast/2019/collection/dedup_collection_jsonl/MARCO_docs08.json"
+    ],
+    "INDEX": "data/trec_cast/2019/index/trec-cast-index",
+    "QUERY": "data/trec_cast/2019/query/full_queries.json",
+    "RESULT": "result/trec_cast/2019/bm25+bert+prf/crumb_file",
+    "RANK_FILE": "result/trec_cast/2019/bm25+bert/bm25_default_bert.txt",
+    "WINDOW_SIZE": 69,
+    "STRIDE": 34
+  },
+  "TREC2019": {
+    "COLLECTION": [
+      "data/trec_deep_2019/collection_jsonl/docs00.json",
+      "data/trec_deep_2019/collection_jsonl/docs01.json",
+      "data/trec_deep_2019/collection_jsonl/docs02.json",
+      "data/trec_deep_2019/collection_jsonl/docs03.json",
+      "data/trec_deep_2019/collection_jsonl/docs04.json",
+      "data/trec_deep_2019/collection_jsonl/docs05.json",
+      "data/trec_deep_2019/collection_jsonl/docs06.json",
+      "data/trec_deep_2019/collection_jsonl/docs07.json",
+      "data/trec_deep_2019/collection_jsonl/docs08.json"
+    ],
+    "INDEX": "data/trec_deep_2019/index/lucene-index-msmarco",
+    "QUERY": "data/trec_deep_2019/query/queries.json",
+    "RESULT": "result/trec_deep_2019/bm25+bert+prf/crumb_file",
+    "RANK_FILE": "result/trec_deep_2019/bm25+bert/bm25_default_bert.txt",
+    "WINDOW_SIZE": 65,
+    "STRIDE": 32
+  },
+  "TREC2020": {
+    "COLLECTION": [
+      "data/trec_deep_2020/collection_jsonl/docs00.json",
+      "data/trec_deep_2020/collection_jsonl/docs01.json",
+      "data/trec_deep_2020/collection_jsonl/docs02.json",
+      "data/trec_deep_2020/collection_jsonl/docs03.json",
+      "data/trec_deep_2020/collection_jsonl/docs04.json",
+      "data/trec_deep_2020/collection_jsonl/docs05.json",
+      "data/trec_deep_2020/collection_jsonl/docs06.json",
+      "data/trec_deep_2020/collection_jsonl/docs07.json",
+      "data/trec_deep_2020/collection_jsonl/docs08.json"
+    ],
+    "INDEX": "data/trec_deep_2020/index/lucene-index-msmarco",
+    "QUERY": "data/trec_deep_2020/query/queries.json",
+    "RESULT": "result/trec_deep_2020/bm25+bert+prf/crumb_file",
+    "RANK_FILE": "result/trec_deep_2020/bm25+bert/bm25_default_bert.txt",
+    "WINDOW_SIZE": 65,
+    "STRIDE": 32
+  },
+    "DLHARD": {
+    "COLLECTION": [
+      "data/trec_deep_2019/collection_jsonl/docs00.json",
+      "data/trec_deep_2019/collection_jsonl/docs01.json",
+      "data/trec_deep_2019/collection_jsonl/docs02.json",
+      "data/trec_deep_2019/collection_jsonl/docs03.json",
+      "data/trec_deep_2019/collection_jsonl/docs04.json",
+      "data/trec_deep_2019/collection_jsonl/docs05.json",
+      "data/trec_deep_2019/collection_jsonl/docs06.json",
+      "data/trec_deep_2019/collection_jsonl/docs07.json",
+      "data/trec_deep_2019/collection_jsonl/docs08.json"
+    ],
+    "INDEX": "data/dl_hard/index/lucene-index-msmarco",
+    "QUERY": "data/dl_hard/query/topics.json",
+    "RESULT": "result/dl_hard/bm25+bert+prf/crumb_file",
+    "RANK_FILE": "result/dl_hard/bm25+bert/bm25_default_bert.txt",
+    "WINDOW_SIZE": 65,
+    "STRIDE": 32
+  }
+}
