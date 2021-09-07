@@ -10,7 +10,7 @@ def averagePRF(query_embeddings, doc_embeddings, searcher, args):
 
     for i, qid in enumerate(qids):
         query_embedding = query_embeddings[qid]
-        if args.do_oracle and len(doc_embeddings[i]) == 0:
+        if len(doc_embeddings[i]) == 0:
             new_query_embeddings[qid] = query_embedding
         else:
             top_doc_embeddings = doc_embeddings[i][:args.prf]
@@ -27,7 +27,7 @@ def rocchioPRF(query_embeddings, doc_embeddings, searcher, args):
 
     for i, qid in enumerate(qids):
         query_embedding = query_embeddings[qid]
-        if args.do_oracle and len(doc_embeddings[i]) == 0:
+        if len(doc_embeddings[i]) == 0:
             new_query_embeddings[qid] = query_embedding
         else:
             top_doc_embeddings = doc_embeddings[i][:args.prf]
