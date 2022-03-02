@@ -76,7 +76,3 @@ For varying alpha and beta, all parameters are needed, `--vector_rerank_mapper` 
 | BM25+BERT+ANCE                 | Rocchio PRF 5 A0.4 B0.6 | 0.3493 | 0.4515   | 0.8573      | 0.3453 |
 | BM25+BERT+RepBERT              | Average PRF 3           | 0.3122 | 0.4174   | 0.8573      | 0.3076 |
 | BM25+BERT+RepBERT              | Rocchio PRF 5 A0.4 B0.6 | 0.3196 | 0.4261   | 0.8573      | 0.3150 |
-| BM25+BERT+TCT-ColBERT V2 HN+   | Average PRF 3           |  |    |       |  |
-| BM25+BERT+TCT-ColBERT V2 HN+   | Rocchio PRF 5 A0.4 B0.6 | 0.3644 | 0.4750   | 0.9695      | 0.3584 |
-| BM25+BERT+DistillBERT Balanced | Average PRF 3           | 0.3515 | 0.4651   | 0.9771      | 0.3443 |
-| BM25+BERT+DistillBERT Balanced | Rocchio PRF 5 A0.4 B0.6 | 0.3515 | 0.4651   | 0.9771      | 0.3443 |
