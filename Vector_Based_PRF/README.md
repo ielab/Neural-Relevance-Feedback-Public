@@ -66,3 +66,13 @@ For varying beta only, `--has_alpha`  parameters are not needed, `--vector_reran
 For varying alpha and beta, all parameters are needed, `--vector_rerank_mapper` is reverse mapper only for trec_cast and webap, other datasets do not need a REVERSE mapper.
 
 `python3 main.py --result_output RESULT_OUTPUT_PATH --vector_rerank --vector_rerank_basefile BASE_RES_FILE --prf_method rocchio --rocchio_beta BETA --has_alpha --prf PRF_DEPTH --query_tsv_file QUERY_TSV_FILEPATH --collection_index COLLECTION_TSV_FILEPATH --model MODEL_NAME --model_path MODEL_PATH --vector_rerank_mapper REVERSE_MAPPER_JSON_PATH`
+
+## Additional Results for Vector Based PRF on MS MARCO Dev with Reranking on top of BM25+BERT
+
+| Model                          | Method                  | MAP    | nDCG@100 | Recall@1000 | MRR@10 |
+|:-------------------------------|:------------------------|:------:|:--------:|:-----------:|:------:|
+| BM25+BERT                      | Original                | 0.3551 | 0.4577   | 0.8573      | 0.3504 |
+| BM25+BERT+ANCE                 | Average PRF 3           | 0.3384 | 0.4416   | 0.8573      | 0.3343 |
+| BM25+BERT+ANCE                 | Rocchio PRF 5 A0.4 B0.6 | 0.3493 | 0.4515   | 0.8573      | 0.3453 |
+| BM25+BERT+RepBERT              | Average PRF 3           | 0.3122 | 0.4174   | 0.8573      | 0.3076 |
+| BM25+BERT+RepBERT              | Rocchio PRF 5 A0.4 B0.6 | 0.3196 | 0.4261   | 0.8573      | 0.3150 |
